@@ -18,6 +18,7 @@ Punto de venta de aplicación comercial para pequeños y medianos comercios.
     * Ver resumen del día.
     * Ver total de ventas por días del mes.
     * Ver total de ventas por año.
+
 ## TODO (Por hacer)
 * Manejo de usuarios y permisos.
 * Ver/listar entradas y salidas de dinero.
