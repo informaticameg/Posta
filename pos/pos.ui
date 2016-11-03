@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>690</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+     subcontrol-origin: margin;
+     subcontrol-position: top center; /* position at the top center */
+     padding: 0 3px;
+
+}
+QGroupBox
+{
+	font: &quot;Helvetica&quot;;
+    font-size: 14px;
+	font-weight: bold;
+
+}</string>
+      </property>
+      <property name="title">
+       <string>Buscar Productos</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>4</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>8</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string> Por </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="cbCampos">
+             <property name="minimumSize">
+              <size>
+               <width>108</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+border: 1px solid #999999; 
+border-radius: 4px;
+padding: 2px 2px 2px 2px;
+min-width: 6em;
+}
+
+QComboBox::down-arrow {
+image: url(:newPrefix/arrow_down.png);
+height: 10px;
+}
+QComboBox:editable {
+background: white;
+border-radius: 0px;
+}
+QComboBox::drop-down { border-style: none}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>DESCRIPCION</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>CODIGO</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Buscar</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="leBusqueda">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Escribir para buscar...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="twDatos">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 1px solid #999999; 
+border-radius: 3px;</string>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectRows</enum>
+           </property>
+           <property name="showGrid">
+            <bool>false</bool>
+           </property>
+           <property name="gridStyle">
+            <enum>Qt::NoPen</enum>
+           </property>
+           <attribute name="horizontalHeaderCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+     subcontrol-origin: margin;
+     subcontrol-position: top center; /* position at the top center */
+     padding: 0 3px;
+
+}
+QGroupBox
+{
+	font: &quot;Helvetica&quot;;
+    font-size: 14px;
+	font-weight: bold;
+
+}</string>
+      </property>
+      <property name="title">
+       <string>VENTA ACTUAL</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QTableWidget" name="twTicket">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>220</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #999999; 
+border-radius: 3px;</string>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::NoPen</enum>
+         </property>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbCantidadProductos">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>0 productos en la venta actual</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="tabPosition">
+         <enum>QTabWidget::South</enum>
+        </property>
+        <property name="tabShape">
+         <enum>QTabWidget::Rounded</enum>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="elideMode">
+         <enum>Qt::ElideNone</enum>
+        </property>
+        <property name="movable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>Ventas</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_14" stretch="2,2">
+            <property name="spacing">
+             <number>1</number>
+            </property>
+            <item>
+             <widget class="QCommandLinkButton" name="cmdRegistrarVenta">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>F12</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../GUI/images_rc/icons.qrc">
+                <normaloff>:/newPrefix/cart.png</normaloff>:/newPrefix/cart.png</iconset>
+              </property>
+              <property name="description">
+               <string>Cobrar venta</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="cmdCancelarVenta">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>F10</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../GUI/images_rc/icons.qrc">
+                <normaloff>:/newPrefix/stock_close.png</normaloff>:/newPrefix/stock_close.png</iconset>
+              </property>
+              <property name="shortcut">
+               <string>F9</string>
+              </property>
+              <property name="description">
+               <string>Cancelar venta</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_6">
+         <attribute name="title">
+          <string>Productos</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_16">
+            <property name="spacing">
+             <number>8</number>
+            </property>
+            <item>
+             <widget class="QCommandLinkButton" name="cmdVarios">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>F2</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../GUI/images_rc/icons.qrc">
+                <normaloff>:/newPrefix/archive-add.png</normaloff>:/newPrefix/archive-add.png</iconset>
+              </property>
+              <property name="shortcut">
+               <string>F5</string>
+              </property>
+              <property name="description">
+               <string>Item Varios</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="cmdArtComun">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>F6</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../GUI/images_rc/icons.qrc">
+                <normaloff>:/newPrefix/applications-other.png</normaloff>:/newPrefix/applications-other.png</iconset>
+              </property>
+              <property name="shortcut">
+               <string>F6</string>
+              </property>
+              <property name="description">
+               <string>Item Articulo Común</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_7">
+         <attribute name="title">
+          <string>Caja</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_17">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_18" stretch="2,2">
+            <property name="spacing">
+             <number>1</number>
+            </property>
+            <item>
+             <widget class="QCommandLinkButton" name="cmdEntradas">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>Registrar una entrada</string>
+              </property>
+              <property name="text">
+               <string>F7</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../GUI/images_rc/icons.qrc">
+                <normaloff>:/newPrefix/back.png</normaloff>:/newPrefix/back.png</iconset>
+              </property>
+              <property name="shortcut">
+               <string>F7</string>
+              </property>
+              <property name="description">
+               <string>Nuevo Ingreso</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="cmdSalidas">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>F8 Registrar una salida</string>
+              </property>
+              <property name="text">
+               <string>F8</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../GUI/images_rc/icons.qrc">
+                <normaloff>:/newPrefix/forward.png</normaloff>:/newPrefix/forward.png</iconset>
+              </property>
+              <property name="shortcut">
+               <string>F8</string>
+              </property>
+              <property name="description">
+               <string>Nuevo Egreso</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_8">
+         <attribute name="title">
+          <string>Otros</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_19">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_20" stretch="2,2">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QCommandLinkButton" name="cmdBorrarArticulo">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>Borra del ticket el articulo seleccionado</string>
+              </property>
+              <property name="text">
+               <string>F4 Borrar Art.</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../GUI/images_rc/icons.qrc">
+                <normaloff>:/newPrefix/archive-extract.png</normaloff>:/newPrefix/archive-extract.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="cmdMasAtajos">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Mas atajos</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../GUI/images_rc/icons.qrc">
+                <normaloff>:/newPrefix/add.png</normaloff>:/newPrefix/add.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4" stretch="3,0">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="lbTotal">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>280</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 1px solid #999999; 
+color:green;
+background-color: white;
+font:84px</string>
+            </property>
+            <property name="text">
+             <string>$ 00.00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	color:rgb(0, 85, 0);
+	margin: 5px;
+	
+	font: 14pt &quot;Helvetica&quot; bold;
+}</string>
+            </property>
+            <property name="text">
+             <string>TOTAL A COBRAR</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="margin">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>leBusqueda</tabstop>
+  <tabstop>twDatos</tabstop>
+  <tabstop>cbCampos</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../GUI/images_rc/icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>leBusqueda</sender>
+   <signal>editingFinished()</signal>
+   <receiver>twDatos</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>295</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>283</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

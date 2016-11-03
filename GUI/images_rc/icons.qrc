@@ -1,0 +1,43 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>plantilla.png</file>
+    <file>stardict.png</file>
+    <file>logo/posta-logo.png</file>
+    <file>logo/posta_logo_l.png</file>
+    <file>logo/posta_logo_m.png</file>
+    <file>logo/posta_logo_s.png</file>
+    <file>desktop_icon/posta_icon_32.png</file>
+    <file>desktop_icon/posta_icon_64.png</file>
+    <file>desktop_icon/posta_icon_128.png</file>
+    <file>desktop_icon/posta_iconlight_32.png</file>
+    <file>desktop_icon/posta_iconlight_64.png</file>
+    <file>desktop_icon/posta_iconlight_128.png</file>
+    <file>applications-other.png</file>
+    <file>amsn.png</file>
+    <file>computer.png</file>
+    <file>archive-extract.png</file>
+    <file>gajim.png</file>
+    <file>xcdroast.png</file>
+    <file>stock_close.png</file>
+    <file>forward.png</file>
+    <file>archive-add.png</file>
+    <file>gtk-cancel.png</file>
+    <file>xfce-filemanager.png</file>
+    <file>applications-system.png</file>
+    <file>exp.png</file>
+    <file>imp.png</file>
+    <file>list.png</file>
+    <file>drive-1934.png</file>
+    <file>edit.png</file>
+    <file>del.png</file>
+    <file>add.png</file>
+    <file>csv.png</file>
+    <file>back.png</file>
+    <file>forward.png</file>
+    <file>config-date.png</file>
+    <file>cart.png</file>
+    <file>gnome-sticky-notes-applet.png</file>
+    <file>file-roller.png</file>
+    <file>config-date.png</file>
+  </qresource>
+</RCC>
